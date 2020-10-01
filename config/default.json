@@ -3,9 +3,5 @@
     "jwtSecret": "kybasas",
     "mongoUri": "mongodb://localhost:27017/?readPreference=primary&ssl=false",
     "baseUrl": "http://localhost:5000",
-    "live": "10h",
-    "cloudinaryName": "dlbrrosrl",
-    "cloudinaryApiKey": "862231168584611",
-    "cloudinaryApiSecret": "UldyBAEE124iMd7ezs21IgBLm14"
-
+    "live": "10h"
 }
