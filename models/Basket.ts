@@ -3,9 +3,9 @@ import { IProduct } from "./Product";
 
 export interface IBasket extends Document {
   data?: IBasket;
-  _id: string;
   user: string | IProduct;
-  products: Array<IProduct> | [];
+  count: number;
+  finalPrice: number;
 }
 
 const BasketSchema: Schema = new Schema(
@@ -14,10 +14,8 @@ const BasketSchema: Schema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "User",
     },
-    products: {
-      type: [Schema.Types.ObjectId],
-      default: [],
-    },
+    count: { type: Number, default: 0 },
+    finalPrice: { type: Number, default: 0 },
   },
   {
     timestamps: true,
